@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header__container container">
-        <a className="header__link" href="/">
+        <a className="header__link" href="/your-profile-react/">
           <img
             className="header__logo header__logo--light-theme"
             src={logo272w}
