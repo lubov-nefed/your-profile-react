@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header__container container">
-        <a className="header__link" href="/your-profile-react/">
+        <a className="header__link" href="/">
           <img
             className="header__logo header__logo--light-theme"
             src={logo272w}
@@ -22,7 +22,7 @@ function Header() {
           </button>
           <a
             className="header__btn btn header__btn--basic-color-style login-btn"
-            href="${loginPaths[currentPath]}"
+            href="/your-profile-react/login"
           >
             Login
           </a>

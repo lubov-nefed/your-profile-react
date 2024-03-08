@@ -27,7 +27,7 @@ function HomePage() {
           <div className="main__btn-container">
             <a
               className="main__btn btn main__btn--main-accent-style create-btn"
-              href="pages/create-account/create-account.html"
+              href="/your-profile-react/create-profile"
             >
               {" "}
               Create profile
@@ -35,7 +35,7 @@ function HomePage() {
             <p className="main__text">or</p>
             <a
               className="main__btn btn main__btn--additional-accent-style watch-btn"
-              href="pages/profile-preview/profile-preview.html"
+              href="/your-profile-react/profile-preview"
             >
               watch example
             </a>
