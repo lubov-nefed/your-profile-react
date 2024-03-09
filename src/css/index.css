@@ -1,3 +1,8 @@
+@import url("./media-queries/xl-1200px-and-wider.css");
+@import url("./media-queries/large-700px-1199px.css");
+@import url("./media-queries/medium-400px-699px.css");
+@import url("./media-queries/small-399px-and-narrower.css");
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
