@@ -1,8 +1,11 @@
-# React + Vite
+# Your Profile  
+  
+[Your Profile](https://lubov-nefed.github.io/your-profile-react/) is [my](https://lubov-nefed.github.io/my-cv/index.html) pet project that pretends to be a social media mini-app.  
+  
+It consists of four pages:  
+* homepage  
+* login page
+* example of existing profile
+* creating your own profile
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies: React + Vite + React Router
