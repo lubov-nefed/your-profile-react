@@ -1,5 +1,6 @@
 import logo272w from "./images/logo-icon-272w.svg";
 import burgerIcon from "./images/burger-icon.svg";
+import './Header.css'
 
 function Header() {
   return (

@@ -5,23 +5,23 @@ function LoginPage() {
   return (
     <>
       <Header /> 
-      <main class="main">
-            <div class="main__container container">
-              <form class="login-form">
-                <h1 class="login-form__heading">Welcome back!</h1>
-                <div class="login-form__row">
-                  <label for="nickname" class="login-form__label">Your name or nickname:</label>
-                  <input class="login-form__input" type="text" name="nickname" placeholder="nickname" required/>
+      <main className="main">
+            <div className="main__container container">
+              <form className="login-form">
+                <h1 className="login-form__heading">Welcome back!</h1>
+                <div className="login-form__row">
+                  <label htmlFor="nickname" className="login-form__label">Your name or nickname:</label>
+                  <input className="login-form__input" type="text" name="nickname" placeholder="nickname" required/>
                 </div>
-                <div class="login-form__row">
-                  <label for="e-mail" class="login-form__label">Your e-mail:</label>
-                  <input class="login-form__input" type="text" name="e-mail" placeholder="e-mail" required/>
+                <div className="login-form__row">
+                  <label htmlFor="e-mail" className="login-form__label">Your e-mail:</label>
+                  <input className="login-form__input" type="text" name="e-mail" placeholder="e-mail" required/>
                 </div>
-                <div class="login-form__row">
-                  <label for="password" class="login-form__label">Your password:</label>
-                  <input class="login-form__input" type="password" name="password" placeholder="password" required/>
+                <div className="login-form__row">
+                  <label htmlFor="password" className="login-form__label">Your password:</label>
+                  <input className="login-form__input" type="password" name="password" placeholder="password" required/>
                 </div>
-                <button class="login-form__submit login-form__submit--main-accent-style btn">Login</button>
+                <button className="login-form__submit login-form__submit--main-accent-style btn">Login</button>
               </form>
 
             </div>

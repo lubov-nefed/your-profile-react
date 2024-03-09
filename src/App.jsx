@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { CreateProfilePage } from "./pages/create-profile/CreateProfilePage.jsx";
 import { ProfilePreviewPage } from "./pages/profile-preview/ProfilePreviewPage.jsx";
