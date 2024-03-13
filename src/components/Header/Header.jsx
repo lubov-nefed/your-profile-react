@@ -22,7 +22,7 @@ function Header() {
           </button>
           <a
             className="header__btn btn header__btn--basic-color-style login-btn"
-            href="${loginPaths[currentPath]}"
+            href="/your-profile-react/login"
           >
             Login
           </a>
