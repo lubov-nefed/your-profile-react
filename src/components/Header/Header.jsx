@@ -1,18 +1,14 @@
-import logo272w from "./images/logo-icon-272w.svg";
 import burgerIcon from "./images/burger-icon.svg";
 import "./Header.css";
 import { Container } from "../Container/Container.jsx";
+import { Logo } from "../Header-components/Logo/Logo.jsx";
 
 function Header() {
   return (
     <header className="header">
       <Container className="header__container">
         <a className="header__link" href="/your-profile-react/">
-          <img
-            className="header__logo header__logo--light-theme"
-            src={logo272w}
-            alt="Your Profile Logo"
-          />
+          <Logo/>
         </a>
         <div className="header__btns">
           <button className="header__theme-btn btn">

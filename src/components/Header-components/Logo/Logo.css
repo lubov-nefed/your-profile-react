@@ -1,0 +1,89 @@
+.logo{
+    background-repeat: no-repeat;
+    @media screen and (min-width: 1200px) {
+        width: 278px;
+        height: 64px;
+      }
+      
+      @media screen and (max-width: 1199px) and (min-width: 700px){
+        width: 278px;
+        height: 64px;
+      }
+      
+      @media screen and (max-width: 699px) and (min-width: 400px){
+        width: 216px;
+        height: 56px;
+      }
+      @media screen and (max-width: 399px) {
+        width: 216px;
+        height: 56px;
+      }
+} 
+.logo[data-theme="light"] {
+
+    @media screen and (min-width: 1200px) {
+   background-image: url('./images/logo-270w-light-theme.svg');
+    }
+    
+    @media screen and (max-width: 1199px) and (min-width: 700px){
+        background-image: url('./images/logo-270w-light-theme.svg');     
+    }
+    
+    @media screen and (max-width: 699px) and (min-width: 400px){
+        background-image: url('./images/logo-208w-light-theme.svg');     
+    }
+    @media screen and (max-width: 399px) {
+        background-image: url('./images/logo-208w-light-theme.svg');
+    }
+}
+.logo[data-theme="light"]:hover {
+
+    @media screen and (min-width: 1200px) {
+   background-image: url('./images/logo-270w-light-theme--hovered.svg');
+    }
+    
+    @media screen and (max-width: 1199px) and (min-width: 700px){
+        background-image: url('./images/logo-270w-light-theme--hovered.svg');     
+    }
+    
+    @media screen and (max-width: 699px) and (min-width: 400px){
+        background-image: url('./images/logo-208w-light-theme--hovered.svg');     
+    }
+    @media screen and (max-width: 399px) {
+        background-image: url('./images/logo-208w-light-theme--hovered.svg');
+    }
+}
+.logo[data-theme="dark"] {
+
+    @media screen and (min-width: 1200px) {
+   background-image: url('./images/logo-270w-dark-theme.svg');
+    }
+    
+    @media screen and (max-width: 1199px) and (min-width: 700px){
+        background-image: url('./images/logo-270w-dark-theme.svg');     
+    }
+    
+    @media screen and (max-width: 699px) and (min-width: 400px){
+        background-image: url('./images/logo-208w-dark-theme.svg');     
+    }
+    @media screen and (max-width: 399px) {
+        background-image: url('./images/logo-208w-dark-theme.svg');
+    }
+}
+.logo[data-theme="dark"]:hover {
+
+    @media screen and (min-width: 1200px) {
+   background-image: url('./images/logo-270w-dark-theme--hovered.svg');
+    }
+    
+    @media screen and (max-width: 1199px) and (min-width: 700px){
+        background-image: url('./images/logo-270w-dark-theme--hovered.svg');     
+    }
+    
+    @media screen and (max-width: 699px) and (min-width: 400px){
+        background-image: url('./images/logo-208w-dark-theme--hovered.svg');     
+    }
+    @media screen and (max-width: 399px) {
+        background-image: url('./images/logo-208w-dark-theme--hovered.svg');
+    }
+}
