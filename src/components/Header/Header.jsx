@@ -1,10 +1,11 @@
 import logo272w from "./images/logo-icon-272w.svg";
 import burgerIcon from "./images/burger-icon.svg";
+import { Container } from "../Container/Container.jsx";
 
 function Header() {
   return (
     <header className="header">
-      <div className="header__container container">
+      <Container className="header__container">
         <a className="header__link" href="/your-profile-react/">
           <img
             className="header__logo header__logo--light-theme"
@@ -28,7 +29,7 @@ function Header() {
           </a>
         </div>
         <img className="header__burger" src={burgerIcon} alt="Open menu" />
-      </div>
+      </Container>
     </header>
   );
 }
