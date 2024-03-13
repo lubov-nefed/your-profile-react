@@ -1,7 +1,8 @@
+import { Container } from "../Container/Container.jsx";
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer__container container">
+      <Container className="footer__container">
         <small className="footer__copyright">Copyright © 2022</small>
         <small className="footer-contacts__text">
           Created by{" "}
@@ -36,7 +37,7 @@ function Footer() {
             />
           </a>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }
