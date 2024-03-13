@@ -1,12 +1,14 @@
 import { Header } from "../../components/Header/Header.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
+import { Main } from "../../components/Main/Main.jsx";
+import { Container } from "../../components/Container/Container.jsx";
 
 function ProfilePreviewPage() {
   return (
     <>
       <Header />
-      <main className="main">
-        <div className="main__container container">
+      <Main>
+        <Container className={"main__container"}>
           <div className="profile-preview">
             <div className="profile-bio">
               <p className="profile-bio__key profile-text">name:</p>
@@ -127,8 +129,8 @@ function ProfilePreviewPage() {
               <span className="like-btn__text">Like it</span>
             </button>
           </div>
-        </div>
-      </main>
+        </Container>
+      </Main>
       <Footer />
     </>
   );

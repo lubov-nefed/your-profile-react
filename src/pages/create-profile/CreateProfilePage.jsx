@@ -1,12 +1,14 @@
 import { Header } from "../../components/Header/Header.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
+import { Main } from "../../components/Main/Main.jsx";
+import { Container } from "../../components/Container/Container.jsx";
 
 function CreateProfilePage() {
   return (
     <>
       <Header />
-      <main className="main">
-        <div className="main__container container">
+      <Main>
+        <Container className={"main__container"}>
           <form className="create-account-form" noValidate>
             <h1 className="create-account-form__heading">
               Creating an account
@@ -92,8 +94,8 @@ function CreateProfilePage() {
               Create account
             </button>
           </form>
-        </div>
-      </main>
+        </Container>
+      </Main>
       <Footer />
     </>
   );

@@ -1,12 +1,14 @@
 import { Header } from "../../components/Header/Header.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
+import { Main } from "../../components/Main/Main.jsx";
+import { Container } from "../../components/Container/Container.jsx";
 
 function LoginPage() {
   return (
     <>
       <Header />
-      <main className="main">
-        <div className="main__container container">
+      <Main>
+        <Container className={"main__container"}>
           <form className="login-form">
             <h1 className="login-form__heading">Welcome back!</h1>
             <div className="login-form__row">
@@ -49,8 +51,8 @@ function LoginPage() {
               Login
             </button>
           </form>
-        </div>
-      </main>
+        </Container>
+      </Main>
       <Footer />
     </>
   );

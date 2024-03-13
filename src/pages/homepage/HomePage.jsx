@@ -1,12 +1,14 @@
 import { Header } from "../../components/Header/Header.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
+import { Main } from "../../components/Main/Main.jsx";
+import { Container } from "../../components/Container/Container.jsx";
 
 function HomePage() {
   return (
     <>
       <Header />
-      <main className="main">
-        <div className="main__container container">
+      <Main>
+        <Container className={"main__container"}>
           <p className="main__subheading">welcome to</p>
           <img
             className="main__heading-img"
@@ -29,7 +31,6 @@ function HomePage() {
               className="main__btn btn main__btn--main-accent-style create-btn"
               href="/your-profile-react/create-profile"
             >
-              {" "}
               Create profile
             </a>
             <p className="main__text">or</p>
@@ -40,8 +41,8 @@ function HomePage() {
               watch example
             </a>
           </div>
-        </div>
-      </main>
+        </Container>
+      </Main>
       <Footer />
     </>
   );
