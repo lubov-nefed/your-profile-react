@@ -1,0 +1,40 @@
+@import url("./media-queries/xl-1200px-and-wider.css");
+@import url("./media-queries/large-700px-1199px.css");
+@import url("./media-queries/medium-400px-699px.css");
+@import url("./media-queries/small-399px-and-narrower.css");
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-width: 100%;
+  min-height: 100vh;
+  text-align: center;
+ }
+
+ .container {
+  margin: 0 auto;
+ }
+
+a {
+  text-decoration: inherit;
+}
+
+body { 
+  margin: 0;/*
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh; */
+}
+
+.btn {
+  cursor: pointer;
+}

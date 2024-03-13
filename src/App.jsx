@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { HomePage } from "./pages/homepage/HomePage.jsx";
 import { CreateProfilePage } from "./pages/create-profile/CreateProfilePage.jsx";
