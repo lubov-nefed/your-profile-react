@@ -9,11 +9,22 @@
 a {
   text-decoration: inherit;
 }
+button {
+  border: none;
+  background-color: unset;
+}
 
 body {
+  transition: all .5s;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  /* 
-  background-color: black; */
+}
+
+body[data-theme="dark"] {
+  background-color: black; 
+}
+
+.btn {
+  cursor: pointer;
 }
