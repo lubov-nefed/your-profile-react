@@ -15,14 +15,21 @@ button {
 }
 
 body {
-  transition: all .5s;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
 }
 
-body[data-theme="dark"] {
+#app {  
+  transition: all .5s;
+}
+
+#app[data-theme="dark"] {
   background-color: black; 
+}
+
+#root, #app {  
+  min-height: 100vh;
 }
 
 .btn {

@@ -7,7 +7,7 @@ import { Error } from "./pages/error/Error.jsx";
 
 function App() {
   return (
-    <>
+    <div id="app" data-theme="light">
       <Routes>
         <Route path="/your-profile-react/" element={<HomePage />} />
         <Route path="/your-profile-react/login" element={<LoginPage />} />
@@ -21,7 +21,7 @@ function App() {
         />
         <Route path="your-profile-react/*" element={<Error />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
