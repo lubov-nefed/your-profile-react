@@ -7,8 +7,9 @@ import { Error } from "./pages/error/Error.jsx";
 import { ThemeContext } from "./ThemeContext.jsx";
 import { useState, useContext, createContext } from "react";
 
+
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || 'light');
   function SwitchTheme() {
     const newTheme = theme === 'light'? 'dark' :'light';
     setTheme(newTheme);
@@ -19,16 +20,16 @@ function App() {
     <div id="app" data-theme={theme}>
       <Routes>
         <Route path="/your-profile-react/" element={<HomePage SwitchTheme={SwitchTheme}/>} />
-        <Route path="/your-profile-react/login" element={<LoginPage />} />
+        <Route path="/your-profile-react/login" element={<LoginPage SwitchTheme={SwitchTheme}/>} />
         <Route
           path="/your-profile-react/create-profile"
           element={<CreateProfilePage SwitchTheme={SwitchTheme}/>}
         />
         <Route
           path="/your-profile-react/profile-preview"
-          element={<ProfilePreviewPage />}
+          element={<ProfilePreviewPage SwitchTheme={SwitchTheme}/>}
         />
-        <Route path="your-profile-react/*" element={<Error />} />
+        <Route path="your-profile-react/*" element={<Error SwitchTheme={SwitchTheme}/>} />
       </Routes>
     </div>
     </ThemeContext.Provider>

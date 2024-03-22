@@ -2,10 +2,10 @@ import { Header } from "../../components/Header/Header.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import { Main } from "../../components/Main/Main.jsx";
 
-function LoginPage() {
+function LoginPage({SwitchTheme}) {
   return (
     <>
-      <Header />
+      <Header SwitchTheme={SwitchTheme}/>
       <Main>
         <form className="login-form">
           <h1 className="login-form__heading">Welcome back!</h1>

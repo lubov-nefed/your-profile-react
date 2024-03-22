@@ -2,10 +2,10 @@ import { Header } from "../../components/Header/Header.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import { Main } from "../../components/Main/Main.jsx";
 
-function ProfilePreviewPage() {
+function ProfilePreviewPage({SwitchTheme}) {
   return (
     <>
-      <Header />
+      <Header  SwitchTheme={SwitchTheme}/>
       <Main>
         <div className="profile-preview">
           <div className="profile-bio">

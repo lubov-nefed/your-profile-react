@@ -1,10 +1,10 @@
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 import { Main } from "../../components/Main/Main.jsx";
-function Error() {
+function Error({SwitchTheme}) {
   return (
     <>
-      <Header />
+      <Header SwitchTheme={SwitchTheme}/>
       <Main>
         <p>404</p>
         <p>Page not found</p>
