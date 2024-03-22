@@ -4,7 +4,7 @@ import { Container } from "../Container/Container.jsx";
 import { Logo } from "../Header-components/Logo/Logo.jsx";
 import { ThemeBtn } from "../Header-components/ThemeBtn/ThemeBtn.jsx";
 
-function Header() {
+function Header({SwitchTheme}) {
   return (
     <header className="header">
       <Container className="header__container">
@@ -12,7 +12,7 @@ function Header() {
           <Logo />
         </a>
         <div className="header__btns">
-          <ThemeBtn />
+          <ThemeBtn onClick={SwitchTheme}/>
           <a
             className="header__btn btn header__btn--basic-color-style login-btn"
             href="/your-profile-react/login"

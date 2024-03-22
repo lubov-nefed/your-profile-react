@@ -2,10 +2,10 @@ import { Header } from "../../components/Header/Header.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import { Main } from "../../components/Main/Main.jsx";
 
-function HomePage() {
+function HomePage({SwitchTheme}) {
   return (
     <>
-      <Header />
+      <Header SwitchTheme={SwitchTheme}/>
       <Main>
         <p className="main__subheading">welcome to</p>
         <img

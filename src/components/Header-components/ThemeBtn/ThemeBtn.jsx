@@ -1,13 +1,15 @@
 import "./ThemeBtn.css";
-import { SwitchTheme } from "./SwitchTheme.jsx";
+import { useContext } from "react";
+import { ThemeContext } from "../../../ThemeContext";
 
-function ThemeBtn() {
+function ThemeBtn({onClick}) {
+  const theme = useContext(ThemeContext);
   return (
     <button
       className="theme-btn btn"
       title="Switch theme"
-      data-theme="light"
-      onClick={SwitchTheme}
+      data-theme={theme}
+      onClick={onClick}
     ></button>
   );
 }

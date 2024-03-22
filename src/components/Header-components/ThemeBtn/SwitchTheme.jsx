@@ -15,4 +15,4 @@ function ApplyStoredTheme() {
   }
 }
 
-export { SwitchTheme, ApplyStoredTheme };
+//export { SwitchTheme, ApplyStoredTheme };
