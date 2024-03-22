@@ -1,8 +1,11 @@
 import "./Logo.css";
+import { useContext } from "react";
+import { ThemeContext } from "../../../ThemeContext";
 
-function Logo() {
+function Logo() {  
+  const theme = useContext(ThemeContext);
   return (
-    <div className="logo" data-theme="light" title="Your Profile Logo"></div>
+    <div className="logo" data-theme={theme} title="Your Profile Logo"></div>
   );
 }
 
