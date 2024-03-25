@@ -1,0 +1,89 @@
+.header__logo-wrapper {
+  @media screen and (min-width: 1200px) {
+    width: 278px;
+    height: 64px;
+  }
+
+  @media screen and (max-width: 1199px) and (min-width: 700px) {
+    width: 278px;
+    height: 64px;
+  }
+
+  @media screen and (max-width: 699px) and (min-width: 400px) {
+    width: 216px;
+    height: 56px;
+  }
+  @media screen and (max-width: 399px) {
+    width: 216px;
+    height: 56px;
+  }
+}
+.header__logo {
+  transition: all 0.2s;
+  max-width: 100%;
+  max-height: 100%;
+}
+.header__logo:hover {
+  filter: drop-shadow(2px 4px 2px #48dfb7);
+}
+.header__logo[data-theme="light"] > * {
+  fill: #5b46ae;
+}
+.header__logo[data-theme="dark"] > * {
+  fill: #ffffff;
+}
+.header__logo > .logo__accent-svg-path {
+  fill: #48dfb7;
+}
+.header__logo[data-theme="light"] > .logo__accent-svg-path {
+  stroke: #5b46ae;
+}
+.header__logo[data-theme="dark"] > .logo__accent-svg-path {
+  stroke: #ffffff;
+}
+
+.main__logo {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 1200px) {
+    width: 608px;
+    height: 176px;
+  }
+
+  @media screen and (max-width: 1199px) and (min-width: 700px) {
+    width: 416px;
+    height: 128px;
+  }
+
+  @media screen and (max-width: 699px){
+    width: 168px;
+    height: 144px;
+  }
+}
+.main__logo[data-theme="light"] {
+  @media screen and (min-width: 1200px) {
+    background-image: url("./images/main__logo-608w-light-theme.svg");
+  }
+
+  @media screen and (max-width: 1199px) and (min-width: 700px) {
+    background-image: url("./images/main__logo-416w-light-theme.svg");
+  }
+
+  @media screen and (max-width: 699px) {
+    background-image: url("./images/main__logo-168w-light-theme.svg");
+  }
+}
+
+.main__logo[data-theme="dark"] {
+  @media screen and (min-width: 1200px) {
+    background-image: url("./images/main__logo-608w-dark-theme.svg");
+  }
+
+  @media screen and (max-width: 1199px) and (min-width: 700px) {
+    background-image: url("./images/main__logo-416w-dark-theme.svg");
+  }
+
+  @media screen and (max-width: 699px) {
+    background-image: url("./images/main__logo-168w-dark-theme.svg");
+  }
+}

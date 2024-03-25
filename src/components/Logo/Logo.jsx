@@ -1,6 +1,6 @@
 import "./Logo.css";
 import { useContext } from "react";
-import { ThemeContext } from "../../../ThemeContext";
+import { ThemeContext } from "../../ThemeContext";
 
 function Logo({ className }) {
   const theme = useContext(ThemeContext);
@@ -10,7 +10,7 @@ function Logo({ className }) {
       <div className="header__logo-wrapper">
         <svg
           viewBox="0 0 278 64"
-          className={/* "logo " + */ className}
+          className={className}
           data-theme={theme}
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -60,10 +60,11 @@ function Logo({ className }) {
         </svg>
       </div>
     );
-  } else {
+  }
+  if (className === "main__logo") {
     return (
       <div
-        className={"logo " + className}
+        className={className}
         data-theme={theme}
         title="Your Profile Logo"
       ></div>
