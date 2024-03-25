@@ -9,7 +9,7 @@ function Header({SwitchTheme}) {
     <header className="header">
       <Container className="header__container">
         <a className="header__link" href="/your-profile-react/">
-          <Logo />
+          <Logo className="header__logo"/>
         </a>
         <div className="header__btns">
           <ThemeBtn onClick={SwitchTheme}/>
