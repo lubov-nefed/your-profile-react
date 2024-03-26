@@ -1,81 +1,40 @@
 .theme-btn {
-  background-repeat: no-repeat;
-  transition: all ease .5s;
-  
-@media screen and (min-width: 1200px) {
-  width: 50px;
-  height: 50px;   
-}
-@media screen and (max-width: 1199px) and (min-width: 700px){
-  width: 50px;
-  height: 50px;  
-}
-@media screen and (max-width: 699px) and (min-width: 400px){
-  width: 40px;
-  height: 40px;  
-}
-@media screen and (max-width: 399px) {
-  width: 40px;
-  height: 40px; 
-}
-}
-
-.theme-btn[data-theme="light"] {  
-@media screen and (min-width: 1200px) {   
-  background-image: url('./images/theme-icon-50w-light.svg');
-}
-@media screen and (max-width: 1199px) and (min-width: 700px){
-  background-image: url('./images/theme-icon-50w-light.svg'); 
-}
-@media screen and (max-width: 699px) and (min-width: 400px){
-  background-image: url('./images/theme-icon-40w-light.svg'); 
-}
-@media screen and (max-width: 399px) {
-  background-image: url('./images/theme-icon-40w-light.svg');
-}
-}
-
-.theme-btn[data-theme="light"]:hover {
-  @media screen and (min-width: 1200px) {     
-    background-image: url('./images/theme-icon-50w-light--hovered.svg');
-  }  
-  @media screen and (max-width: 1199px) and (min-width: 700px){
-    background-image: url('./images/theme-icon-50w-light--hovered.svg');   
-  }  
-  @media screen and (max-width: 699px) and (min-width: 400px){
-    background-image: url('./images/theme-icon-40w-light--hovered.svg');   
+  padding: 0;
+  @media screen and (min-width: 1200px) {
+    width: 50px;
+    height: 50px;   
   }
-  @media screen and (max-width: 399px) {
-    background-image: url('./images/theme-icon-40w-light--hovered.svg');
+  @media screen and (min-width: 700px){
+    width: 50px;
+    height: 50px;  
+  }
+  @media screen and (max-width: 699px) {
+    width: 40px;
+    height: 40px;  
   }
 }
 
-.theme-btn[data-theme="dark"] {  
-  @media screen and (min-width: 1200px) {     
-    background-image: url('./images/theme-icon-50w-dark.svg');
-  }  
-  @media screen and (max-width: 1199px) and (min-width: 700px){
-    background-image: url('./images/theme-icon-50w-dark.svg');   
-  }  
-  @media screen and (max-width: 699px) and (min-width: 400px){
-    background-image: url('./images/theme-icon-40w-dark.svg');   
-  }
-  @media screen and (max-width: 399px) {
-    background-image: url('./images/theme-icon-40w-dark.svg');
-  }
+.theme-btn[data-theme="light"] .theme-btn__svg > * {
+  fill: #695F59;
 }
 
-.theme-btn[data-theme="dark"]:hover {
-  @media screen and (min-width: 1200px) {     
-    background-image: url('./images/theme-icon-50w-dark--hovered.svg');
-  }  
-  @media screen and (max-width: 1199px) and (min-width: 700px){
-    background-image: url('./images/theme-icon-50w-dark--hovered.svg');   
-  }  
-  @media screen and (max-width: 699px) and (min-width: 400px){
-    background-image: url('./images/theme-icon-40w-dark--hovered.svg');   
-  }
-  @media screen and (max-width: 399px) {
-    background-image: url('./images/theme-icon-40w-dark--hovered.svg');
-  }
+.theme-btn[data-theme="light"] .theme-btn__svg > .theme-btn__accent-svg-path {
+  fill: #877A72;
+}
+
+.theme-btn[data-theme="light"] .theme-btn__svg:hover > * {
+  fill: #5B46AE;
+  filter: drop-shadow(2px 2px 2px #5B46AE);
+}
+
+.theme-btn[data-theme="light"] .theme-btn__svg:hover > .theme-btn__accent-svg-path {
+  fill: #48DFB7;
+  filter: drop-shadow(2px 2px 2px #5B46AE);
+}
+
+.theme-btn[data-theme="dark"] .theme-btn__svg > * {
+  fill: #fff;
+}
+.theme-btn[data-theme="dark"] .theme-btn__svg:hover > * {
+  fill: #48DFB7;
 }
