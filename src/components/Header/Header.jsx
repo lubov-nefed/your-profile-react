@@ -23,8 +23,18 @@ function Header({ SwitchTheme }) {
             Login
           </a>
         </div>
-        <button className="btn">
-          <img className="header__burger" src={burgerIcon} alt="Open menu" />
+        <button className="btn header__burger-btn" title="Open menu">
+          <svg
+            className="burger-btn__svg"
+            data-theme={theme}
+            width="20"
+            height="15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="12" width="20" height="3" rx="1.5" />
+            <rect y="6" width="20" height="3" rx="1.5" />
+            <rect width="20" height="3" rx="1.5" />
+          </svg>
         </button>
       </Container>
     </header>

@@ -13,3 +13,27 @@
     display: flex;
     justify-content: space-between;
 }
+
+.header__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 24px;
+    @media screen and (max-width: 699px){
+    display: none;
+  }
+}
+
+.header__burger-btn {    
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
+}
+
+.burger-btn__svg[data-theme="light"] > * {
+    fill: #5B46AE;
+}
+
+.burger-btn__svg[data-theme="dark"] {
+    fill: #fff;
+}
