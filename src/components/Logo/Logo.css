@@ -19,7 +19,6 @@
   }
 }
 .header__logo {
-  transition: all 0.2s;
   max-width: 100%;
   max-height: 100%;
 }

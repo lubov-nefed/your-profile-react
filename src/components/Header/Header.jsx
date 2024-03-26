@@ -5,6 +5,7 @@ import { ThemeBtn } from "../Header-components/ThemeBtn/ThemeBtn.jsx";
 import { Logo } from "../Logo/Logo.jsx";
 import { ThemeContext } from "../../ThemeContext.jsx";
 import { useContext } from "react";
+import { LoginBtn } from "../Header-components/LoginBtn/LoginBtn.jsx";
 
 function Header({ SwitchTheme }) {
   const theme = useContext(ThemeContext);
@@ -16,12 +17,7 @@ function Header({ SwitchTheme }) {
         </a>
         <div className="header__btns">
           <ThemeBtn onClick={SwitchTheme} />
-          <a
-            className="header__btn btn header__btn--basic-color-style login-btn"
-            href="/your-profile-react/login"
-          >
-            Login
-          </a>
+          <LoginBtn />
         </div>
         <button className="btn header__burger-btn" title="Open menu">
           <svg
