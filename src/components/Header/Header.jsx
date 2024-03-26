@@ -3,10 +3,13 @@ import "./Header.css";
 import { Container } from "../Container/Container.jsx";
 import { ThemeBtn } from "../Header-components/ThemeBtn/ThemeBtn.jsx";
 import { Logo } from "../Logo/Logo.jsx";
+import { ThemeContext } from "../../ThemeContext.jsx";
+import { useContext } from "react";
 
 function Header({ SwitchTheme }) {
+  const theme = useContext(ThemeContext);
   return (
-    <header className="header">
+    <header className="header" data-theme={theme}>
       <Container className="header__container">
         <a className="header__link" href="/your-profile-react/">
           <Logo className="header__logo" />
