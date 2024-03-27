@@ -1,4 +1,4 @@
-/* import "./Main.css"; */
+import "./Main.css";
 import { Container } from "../../components/Container/Container.jsx";
 function Main({ children }) {
   return (

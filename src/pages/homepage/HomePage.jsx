@@ -2,31 +2,32 @@ import { Header } from "../../components/Header/Header.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import { Main } from "../../components/Main/Main.jsx";
 import { Logo } from "../../components/Logo/Logo.jsx";
+import { MainBtn } from "../../components/Main-components/MainBtn/MainBtn.jsx";
 
 function HomePage({ SwitchTheme }) {
   return (
     <>
       <Header SwitchTheme={SwitchTheme} />
       <Main>
-        <p className="main__subheading">welcome to</p>
+        <p className="main__subheading text">welcome to</p>
         <Logo className={"main__logo"} />
-        <p className="main__text">
+        <p className="main__text text">
           a place where you can create your personal profile page
         </p>
-        <div className="main__btn-container">
-          <a
-            className="main__btn btn main__btn--main-accent-style create-btn"
-            href="/your-profile-react/create-profile"
+        <div className="main__btns-container">
+          <MainBtn
+            btnCssStyle="main__btn--main-accent-style"
+            path="/your-profile-react/create-profile"
           >
             Create profile
-          </a>
-          <p className="main__text">or</p>
-          <a
-            className="main__btn btn main__btn--additional-accent-style watch-btn"
-            href="/your-profile-react/profile-preview"
+          </MainBtn>
+          <p className="main__text text">or</p>
+          <MainBtn
+            btnCssStyle="main__btn--additional-accent-style"
+            path="/your-profile-react/profile-preview"
           >
             watch example
-          </a>
+          </MainBtn>
         </div>
       </Main>
       <Footer />

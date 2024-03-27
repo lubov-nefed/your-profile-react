@@ -3,11 +3,11 @@ function Footer() {
   return (
     <footer className="footer">
       <Container className="footer__container">
-        <small className="footer__copyright">Copyright © 2022</small>
-        <small className="footer-contacts__text">
+        <small className="footer__copyright text">Copyright © 2022</small>
+        <small className="footer-contacts__text text">
           Created by{" "}
           <a
-            className="footer-contacts__gh-link"
+            className="footer-contacts__gh-link text"
             href="https://github.com/lubov-nefed"
           >
             Lubov Nefed

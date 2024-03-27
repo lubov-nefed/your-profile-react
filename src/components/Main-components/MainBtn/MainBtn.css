@@ -1,0 +1,40 @@
+.main__btn {
+  display: inline-block;
+  border-radius: 50px;
+  font-weight: bold;
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+    font-size: 36px;
+    line-height: 40px;
+    
+  }
+  @media screen and (max-width: 1199px) {
+    padding: 16px 0;
+    font-size: 20px;
+    line-height: 24px; 
+    
+  }
+}
+.main__btn--main-accent-style {
+  background-color: #5B46AE;
+  color: #fff;
+  border: solid 1px #5B46AE;
+}
+
+.main__btn--main-accent-style:hover {
+  background-color: #48DFB7;
+  box-shadow: 2px 4px 4px #5B46AE;
+  color: #5B46AE;
+}
+
+.main__btn--additional-accent-style {
+  background-color: #48DFB7;
+  color: #5B46AE;
+  border: solid 1px #48DFB7;
+}
+
+.main__btn--additional-accent-style:hover {
+  background-color: #5B46AE;
+  box-shadow: 2px 4px 4px #48DFB7;
+  color: #48DFB7;
+}

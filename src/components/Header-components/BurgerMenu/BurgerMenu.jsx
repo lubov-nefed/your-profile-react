@@ -49,7 +49,7 @@ function BurgerMenu({ SwitchTheme }) {
           </button>
         </Container>
       </header>
-      <ul className="burger__links-list">
+      <ul>
         <li>
           <a className="burger__link" href="/your-profile-react/create-profile">
             Create Profile
