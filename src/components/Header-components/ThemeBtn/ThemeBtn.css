@@ -14,6 +14,8 @@
   }
 }
 
+/* Svg styling */
+/* Default light styles */
 .theme-btn[data-theme="light"] .theme-btn__svg > * {
   fill: #695F59;
 }
@@ -22,19 +24,27 @@
   fill: #877A72;
 }
 
-.theme-btn[data-theme="light"] .theme-btn__svg:hover > * {
-  fill: #5B46AE;
-  filter: drop-shadow(2px 2px 2px #5B46AE);
-}
 
-.theme-btn[data-theme="light"] .theme-btn__svg:hover > .theme-btn__accent-svg-path {
-  fill: #48DFB7;
-  filter: drop-shadow(2px 2px 2px #5B46AE);
-}
-
+/* Default dark styles */
 .theme-btn[data-theme="dark"] .theme-btn__svg > * {
   fill: #fff;
 }
-.theme-btn[data-theme="dark"] .theme-btn__svg:hover > * {
+
+/* Hovered light & dark styles */
+@media (pointer: fine) {  
+.theme-btn[data-theme="light"]:hover .theme-btn__svg > * {
+  fill: #5B46AE;
+}
+
+.theme-btn[data-theme="light"]:hover .theme-btn__svg {
+  filter: drop-shadow(2px 2px 2px #5B46AE);
+}
+
+.theme-btn[data-theme="light"]:hover .theme-btn__svg > .theme-btn__accent-svg-path {
   fill: #48DFB7;
+}
+
+.theme-btn[data-theme="dark"]:hover .theme-btn__svg > * {
+  fill: #48DFB7;
+}
 }

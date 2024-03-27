@@ -1,0 +1,94 @@
+/* Burger Menu */
+.burger {
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.burger.closed {
+  margin-top: -100vh;
+}
+.burger.opened {
+  margin-top: 0;
+}
+
+.burger[data-theme="light"] {
+  background-color: #F1EFE3;
+}
+
+.burger[data-theme="dark"] {
+  background-color: #14064A;
+}
+
+.burger__header {
+  padding: 16px 0 24px;
+}
+
+.burger[data-theme="light"] .burger__header {
+  background-color: #D2C8BE;
+}
+
+.burger[data-theme="dark"] .burger__header {
+  background-color: #5B46AE;
+}
+
+.burger__btns-container {    
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.burger__close-btn[data-theme="light"]:hover .burger__close-btn-svg  > * {
+  fill: #5B46AE;
+}
+
+.burger__close-btn[data-theme="light"]:hover .burger__close-btn-svg {
+  filter: drop-shadow(2px 2px 2px #48DFB7);
+}
+
+.burger__close-btn[data-theme="light"] .burger__close-btn-svg  > *{
+  fill: #695F59;
+}
+
+.burger__close-btn[data-theme="dark"] .burger__close-btn-svg > *{
+  fill: #fff;
+}
+
+.burger__close-btn[data-theme="dark"]:hover .burger__close-btn-svg > *{
+  fill: #48DFB7;
+}
+
+.burger__links-list {
+  padding: 0;
+  margin: 0;
+}
+
+.burger__link {
+  display: block;
+  padding: 24px 32px 32px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.burger[data-theme="light"] .burger__link {
+  color: #5B46AE;
+  border: solid 1px #D1C7BE;
+}
+
+.burger[data-theme="dark"] .burger__link {
+  color: #fff;
+  border: solid 1px #5B46AE;
+}
+
+.burger[data-theme="light"] .burger__link:hover {
+  background-color: #48DFB7;
+  color: #fff;
+}
+
+.burger[data-theme="dark"] .burger__link:hover {    
+  background-color: #fff;
+  color: #14064A;
+}
