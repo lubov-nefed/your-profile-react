@@ -3,6 +3,7 @@ import { Footer } from "../../components/Footer/Footer.jsx";
 import { Main } from "../../components/Main/Main.jsx";
 import { Logo } from "../../components/Logo/Logo.jsx";
 import { MainBtn } from "../../components/Main-components/MainBtn/MainBtn.jsx";
+import "./HomePage.css";
 
 function HomePage({ SwitchTheme }) {
   return (
